@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <!--CABEÇALHO-->
+    <header class="header">
+      <nav>
+        <div class="navbar_container">
+          <a href="#" class="navbar_logo">
+            <img src="assets/img/logo.png" alt="logo" />
+          </a>
+
+          <!-- Links de navegação-->
+          <ul class="navbar-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sobrenos.html" target="_blank">SOBRE NÓS</a></li>
+            <li><a href="noticias.html" target="_blank">NOTÍCIAS</a></li>
+            <li><a href="exemplos.html" target="_blank">EXEMPLOS</a></li>
+            <li><a href="exemplo1.html" target="_blank">CAMPANHA</a></li>
+            <li><a href="dicas.html" target="_blank">DICAS</a></li>
+           
+          </ul>
+
+          <!--Busca-->
+          <div class="search-box">
+            <button class="search">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <input type="text" placeholder="Pesquisar..." />
+          </div>
+
+          <!--Botão Mobile-->
+          <button class="navbar_toglle" aria-label="menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!--HERO SECTION-->
+    <section class="hero-section">
+      <div class="section_container hero_container">        
+      </div>
+    </section>
+
+      <!-- Main content -->
+    <main>
+      <!-- Introdução -->
+      <section id="introducao" class="intro" aria-labelledby="intro-title">
+        <img
+          src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7e4e0f6b1f3d4a5c2d6b8b0a2b2d7f7e"
+          alt="Natureza e plástico"
+        />
+        <div class="texts">
+          <h2 id="intro-title">Resumo</h2>
+          <p class="texto">
+            O plástico é um dos maiores poluentes da atualidade: milhões de
+            toneladas são produzidas e grande parte é descartada incorretamente,
+            poluindo rios, oceanos e solos. A educação ambiental orienta para
+            reduzir o consumo e transformar comportamentos.
+          </p>
+        </div>
+      </section>
+
+      <!-- Conteúdo em duas colunas: principal + lateral -->
+      <div class="two-col">
+        <!-- Coluna principal -->
+        <div>
+          <!-- Notícias -->
+          <section
+            id="noticias"
+            aria-labelledby="news-title"
+            style="margin-bottom: 18px"
+          >
+            <h2 id="news-title">Notícias</h2>
+            <p class="news-texto">
+              Cards com fotos de mutirões, campanhas e atualizações sobre leis
+              ambientais.
+            </p>
+            <div class="grid">
+              <article class="card" aria-label="Notícia: mutirão de limpeza">
+                <img src="assets/img/multirãoCaragua.jpeg" alt="Mutirão" width="200px" />
+                <div class="card-body">
+                  <h3 class="card-title">Mutirão “Praia Limpa Caraguá” recolhe mais de 80 quilos de lixo e microlixo na Martim de Sá</h3>
+                  <p class="card-texto">
+                    Voluntários reunidos em ação local recolhem resíduos e
+                    promovem conscientização sobre descarte correto.
+                    <br>
+                    <a href="https://www.caraguatatuba.sp.gov.br/pmc/2025/09/mutirao-praia-limpa-caragua-recolhe-mais-de-80-quilos-de-lixo-e-microlixo-na-martim-de-sa/#:~:text=Agricultura%20e%20Pesca-,Mutir%C3%A3o%20%E2%80%9CPraia%20Limpa%20Caragu%C3%A1%E2%80%9D%20recolhe%20mais%20de%2080%20quilos%20de,microlixo%20na%20Martim%20de%20S%C3%A1" target="_blank">Para maiores informações click aqui</a>
+                  </p>
+                </div>
+              </article>
+
+              <article class="card" aria-label="Notícia: lei municipal">
+                <img src="assets/img/moçaSentada.jpg" alt="Lei" width="200px" />
+                <div class="card-body">
+                  <h3 class="card-title">Lei que proíbe utilização de canudos plásticos em Caraguatatuba</h3>
+                  <p class="card-texto">
+                    Cidades adotam restrições ao uso de copos e canudos
+                    descartáveis para negócios locais.
+                    <br>
+                    <a href="https://www.caraguatatuba.sp.gov.br/pmc/2018/10/lei-que-proibe-utilizacao-de-canudos-plasticos-e-sancionada-e-adequacoes-serao-em-180-dias/" target="_blank">Para maiores informações click aqui</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Exemplos / infográfico -->
+         
+            <h2 id="examples-title">Exemplos</h2>
+            <p>
+              Infográficos simples mostram comparações “antes e depois” e
+              impacto de ações cotidianas.
+            </p>
+            
+
+            <div class="infographic" role="img"aria-label="Infográfico demonstrando redução de plástico" >
+              <div>
+                <strong>Comparativo: Garrafas por pessoa</strong>
+
+                <small style="display: block; color: var(--muted)"
+                  >Impacto mensal estimado</small
+                >
+              </div>
+
+              <div class="bar-row">
+                <div class="label">Descartável (média)</div>
+                <div class="bar"><i style="width: 72%"></i></div>
+                <div> 72</div>
+              </div>
+
+              <div class="bar-row">
+                <div class="label">Reutilizável (média)</div>
+                <div class="bar"><i style="width: 18%"></i></div>
+                <div>18</div>
+              </div>
+
+              <small
+                >Exemplo ilustrativo: 1 garrafa reutilizável pode reduzir
+                dezenas de descartáveis por mês.</small
+              >
+            </div>
+          </section>
+
+          <!-- Conclusão -->
+          <section id="conclusao" aria-labelledby="conclusion-title">
+            <h2 id="conclusion-title">Conclusão</h2>
+            <div
+              class="conclusion"
+              role="region"
+              aria-label="Conclusão da página"
+            >
+              <p>Pequenas mudanças, grandes resultados.</p>
+              <small
+                >Educar e agir no cotidiano transforma hábitos e protege o
+                planeta.</small
+              >
+            </div>
+          </section>
+        </div>
+
+        <!-- Coluna lateral -->
+        <aside>
+          <!-- Texto rápido / justificativa -->
+           <section>
+
+          <div class= "card"  >
+            <h3>
+              Por que reduzir o plástixo </h3>
+            <p>
+              Preservar a natureza, proteger a biodiversidade, reduzir riscos à
+              saúde e promover consumo consciente.
+            </p>
+          </div>
+          </section>
+
+          <!-- Dicas -->
+           <br>
+          <section id="dicas" aria-labelledby="tips-title">
+            <h3 id="tips-title"> Dicas práticas </h3>
+            <div class="tips">
+              <br>
+              <div class="tip" role="article" aria-label="Dica: Ecobag">
+                <img
+                  src="assets/img/reutilizavel.png" title="reutilizável ícones"></a>
+                  
+                               <p>
+                  <strong>Ecobags:</strong> Use sacolas reutilizáveis em vez de
+                  sacolas plásticas.
+                </p>
+              </div>
+
+              <div class="tip" role="article" aria-label="Dica: Garrafa reutilizável" >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+                  alt="ícone garrafa"
+                />
+                <p>
+                  <strong>Garrafas e copos:</strong> Prefira opções
+                  reutilizáveis em casa, trabalho e festas.
+                </p>
+              </div>
+
+              <div
+                class="tip"
+                role="article"
+                aria-label="Dica: Compras a granel"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png"
+                  alt="ícone compras a granel"
+                />
+                <p>
+                  <strong>Comprar a granel:</strong> Reduza embalagens
+                  escolhendo a granel sempre que possível.
+                </p>
+              </div>
+
+              <div class="tip" role="article" aria-label="Dica: Reciclagem">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/992/992651.png"
+                  alt="ícone reciclagem"
+                />
+                <p>
+                  <strong>Reciclagem correta:</strong> Separe os plásticos
+                  limpos e secos para a coleta seletiva.
+                </p>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      Projeto Integrador 1 — Educação Ambiental • Redução de Plásticos no
+      Cotidiano © 2025
+
+      <a href="./grupo.html" target="_blank"><ion-icon name="accessibility-outline"></ion-icon> Integrantes</a>
+
+    </footer>
+
+     <!--iconic-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>    
+  
+   
+  </body>
+</html>
