@@ -149,7 +149,8 @@ a {
 .video iframe {
   width: 80%;
   max-width: 560px;
-  height: auto;
+  height: 315px;
+  border-radius: 12px;
 }
 
 .text {
