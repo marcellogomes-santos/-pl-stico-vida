@@ -319,3 +319,114 @@ footer {
   color: white;
   font-size: 14px;
 }
+
+@media (max-width: 992px) {
+  .navbar_container {
+    padding: 1rem;
+    height: auto;
+    transform: translateY(0);
+    gap: 10px;
+  }
+
+  .navbar-links {
+    gap: 1.2rem;
+  }
+
+  .search-box {
+    width: 180px;
+  }
+
+  .cards-equipe {
+    gap: 25px;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+
+  /* Mostrar botão mobile */
+  .navbar_toglle {
+    display: block;
+  }
+
+  /* Esconder links e busca inicialmente */
+  .navbar-links,
+  .search-box {
+    display: none;
+  }
+
+  /* MENU MOBILE */
+  .navbar-links {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+    gap: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  /* HERO menor */
+  .hero-section {
+    padding-block: 6rem;
+    background-position: center;
+  }
+
+  /* EQUIPE */
+  .cards-equipe {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Texto */
+  .titulo-secao h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+  .navbar_container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navbar_logo img {
+    max-width: 90px;
+  }
+
+  .hero-section {
+    padding-block: 4rem;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .titulo-secao h2 {
+    font-size: 1.8rem;
+  }
+}
+

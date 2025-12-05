@@ -174,3 +174,106 @@ footer {
   color: white;
   font-size: 14px;
 }
+
+@media (max-width: 992px) {
+
+  .navbar-links {
+    gap: 1rem;
+  }
+
+  .search-box {
+    width: 180px;
+  }
+
+  .sobre {
+    width: 90%;
+  }
+
+  .sobreNos .fotos img {
+    width: 200px;
+    height: 130px;
+  }
+}
+
+/* ----- MOBILE ----- */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .navbar_container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem;
+    transform: translateY(0);
+  }
+
+  .navbar_toglle {
+    display: block;
+  }
+
+  /* Esconde menu inicialmente */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding: 1rem 0;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+
+  /* Classe ativa quando clicar no botão */
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    padding: .7rem 0;
+  }
+
+  .search-box {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+
+  /* HERO */
+  .hero-section {
+    padding-block: 6rem;
+  }
+
+  .hero_container h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  /* SOBRE */
+  .sobre {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .sobreNos .fotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobreNos .fotos img {
+    width: 90%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* ----- MOBILE PEQUENO ----- */
+@media (max-width: 480px) {
+  .hero_container h1 {
+    font-size: 2rem;
+  }
+
+  .navbar_logo img {
+    max-width: 90px;
+  }
+}

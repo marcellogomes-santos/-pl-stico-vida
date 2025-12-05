@@ -22,10 +22,10 @@
 }
 
 body {
-  font-family: "roboto", sans -serif;
+  font-family: "Roboto", sans-serif;
   background-color: #d9eee0;
+  overflow-x: hidden;
 }
-
 a {
   text-decoration: none;
 }
@@ -50,7 +50,7 @@ a {
   justify-content: space-between;
   height: 120px;
   padding: 1rem 2rem;
-  transform: translatey(35%);
+  transform: translateY(35%);
 }
 
 .navbar_logo img {
@@ -81,12 +81,8 @@ a {
   display: flex;
   align-items: center;
   border-bottom: 2px solid darkgreen;
-  border-radius: 0 0 10px 10px;
-  padding-bottom: 0.1rem;
+  padding-bottom: .1rem;
   margin-left: 2rem;
-  outline: none;
-  font-size: 1rem;
-  color: var(--text-dark);
   width: 230px;
 }
 
@@ -124,10 +120,9 @@ a {
     url("../img/banner.png");
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
   padding-block: 10rem;
-  margin-bottom: 20px;
 }
+
 
 .hero_container h1 {
   color: var(--white);
@@ -152,20 +147,18 @@ a {
 
 
 .video iframe {
-    width: 80%;
-    max-width: 560px;
-    height: 315px;
-    border-radius: 12px;
+  width: 80%;
+  max-width: 560px;
+  height: auto;
 }
 
-
 .text {
-    padding: 2rem 4rem;
-    text-align: center;
-    line-height: 1.8;
-    font-size: 1.1rem;
-    text-justify: auto;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  line-height: 1.8;
 }
 
 
@@ -178,4 +171,109 @@ footer {
   font-size: 14px;
 }
 
+@media (max-width: 992px) {
 
+  .navbar_container {
+    padding: 1rem;
+    transform: translateY(0);
+    height: auto;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
+
+  .search-box {
+    width: 180px;
+  }
+
+  .hero-section {
+    padding-block: 7rem;
+  }
+
+  .campanha {
+    font-size: 1.7rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  /* NAVBAR MOBILE ATIVA */
+  .navbar_toglle {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 95px;
+    right: 0;
+    background: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    display: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .navbar_container {
+    transform: translateY(0);
+    height: auto;
+  }
+
+  .hero-section {
+    padding-block: 5rem;
+  }
+
+  .campanha {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .video iframe {
+    width: 95%;
+  }
+
+  .text {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  .navbar_logo img {
+    max-width: 80px;
+  }
+
+  .campanha {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
